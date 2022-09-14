@@ -1,10 +1,8 @@
-#include "main.h" 
-
-/** 
-** main - main entry 
-** Return: int 
-**/ 
- 
+#include "main.h"
+/**
+** main - main entry
+** Return: int
+*/
 int main(void)
 {
 _putchar('_');
