@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-** main - main entry
-** Return: int
+* main - print purchar
+* Return: Always 0
 */
 int main(void)
 {
