@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include "6-abs.c"
 /**
- * print_to_98 - prints to 98
- * @n: parameter
- *
- * Return: always returns nothing
- */
+* print_to_98 - prints to 98
+* @n: parameter
+*
+* Return: always returns nothing
+*/
 
 void print_to_98(int n)
 {
