@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * times_table -prints the times table up to 9
- * Return: void
- */
+* times_table -prints the times table up to 9
+* Return: void
+*/
 void times_table(void)
 {
 int a, b, c, d, e;
