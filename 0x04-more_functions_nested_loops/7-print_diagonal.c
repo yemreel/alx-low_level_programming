@@ -1,15 +1,29 @@
 #include "main.h"
-#include "6-abs.c"
 /**
-* print_last_digit - main function
+* print_diagonal - prints diagonal
 *
-* @n: integer to get last digit of
-* Return: last digit of n
-*
+* @n: number of times the character \ should be printed
 */
-
-int print_last_digit(int n)
+void print_diagonal(int n)
 {
-_putchar('0' + _abs(n % 10));
-return (_abs(n % 10));
+int c;
+int i;
+
+c = 0;
+
+while (n > 0)
+{
+i = c;
+while (i > 0)
+{
+_putchar(' ');
+i--;
+}
+_putchar('\\');
+_putchar('\n');
+c++;
+n--;
+}
+if (c < 1)
+_putchar('\n');
 }
