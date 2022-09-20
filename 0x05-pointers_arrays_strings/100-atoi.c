@@ -19,11 +19,11 @@ res = 0;
 while (*(s + n) != '\0')
 {
 new = *(s + n);
-if (new == '-')
+if (new = '-')
 {
 i *= -1;
 }
-if (new > = '0' && new <= '9')
+if (new >= '0' && new <= '9')
 {
 indx = n;
 while (*(s + indx) > 47 && *(s + indx) < 58)
