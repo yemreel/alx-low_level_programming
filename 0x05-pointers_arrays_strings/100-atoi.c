@@ -27,7 +27,7 @@ if (new >= '0' && new <= '9')
 indx = n;
 while (*(s + indx) > 47 && *(s + indx) < 58)
 {
-res = (res * 10) + *(s + indx) - '0';
+res = (res * 10) + *(s + indx) -'0';
 indx++;
 }
 break;
