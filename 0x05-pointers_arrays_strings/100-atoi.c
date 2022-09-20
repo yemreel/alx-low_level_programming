@@ -19,7 +19,7 @@ res = 0;
 while (*(s + n) != '\0')
 {
 new = *(s + n);
-if (new = '-')
+if (new == ' ')
 {
 i *= -1;
 }
