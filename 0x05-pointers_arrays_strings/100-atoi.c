@@ -13,13 +13,12 @@ int n, indx;
 unsigned int res;
 int i = 1;
 char new;
-
 n = 0;
 res = 0;
 while (*(s + n) != '\0')
 {
 new = *(s + n);
-if (new == ' ')
+if (new == '-')
 {
 i *= -1;
 }
