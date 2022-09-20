@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
-* _atoi - converts the first set of digits in a string to an integer,
+* _atoi - converts the first set of digits in a string to an integer
 *
 * @s: string to be converted
 *
@@ -18,7 +19,7 @@ res = 0;
 while (*(s + n) != '\0')
 {
 new = *(s + n);
-if (new = = '-')
+if (new == '-')
 {
 i *= -1;
 }
@@ -37,4 +38,5 @@ n++;
 if (i < 0)
 res *= i;
 return (res);
+
 }
