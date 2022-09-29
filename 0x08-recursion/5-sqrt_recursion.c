@@ -1,36 +1,39 @@
 #include "main.h"
 
 /**
-* is_prime_number - returns 1 if the input integer is a prime number,
-* otherwise returns 0
+* _sqrt_recursion - returns the natural square root of a number
 *
 * @n: number
-* Return: int
+*
+* Return: returns int
 */
-int is_prime_number(int n)
+int _sqrt_recursion(int n)
 {
-int i = 2;
+int square = 2;
 
-if (n <= 2)
-return (n == 2 ? 1 : 0);
-if (n % 2 == 0)
-return (0);
-return (is_prime(n, i));
+if (n < 0)
+return (-1);
+else if (n == 0 || n == 1)
+return (n);
+return (is_sqrt(n, square));
 }
 
 /**
-* is_prime - returns 1 if the input integer is a prime number,
-* otherwise returns 0
+* is_sqrt - function to check whether it's a natural square root or not
 *
 * @n: number
-* @i: dividend
-* Return: int
+*
+* @square: test number
+*
+* Return: returns int
 */
-int is_prime(int n, int i)
+int is_sqrt(int n, int square)
 {
-if (n != i && n % i == 0)
-return (0);
-else if (n == i)
-return (1);
-return (is_prime(n, i + 1));
+if (square * square == n)
+return (square);
+else if (square * square < n)
+return (is_sqrt(n, square + 1));
+else if (square * square > n)
+return (-1);
+return (-1);
 }
