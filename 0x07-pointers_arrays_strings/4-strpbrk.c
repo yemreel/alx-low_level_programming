@@ -2,6 +2,7 @@
 
 /**
 * _strpbrk - locates first occurence of any bytes from accept in s
+*
 * @s: string to work on
 *
 * @accept: pattern to match against
